@@ -21,7 +21,7 @@ const Home = () => {
       description: "Major technology companies continue to show resilience with impressive quarterly results, beating analyst expectations across the board.",
       source: "Tech Daily",
       publishedAt: "2025-01-20T10:30:00Z",
-      urlToImage: "https://via.placeholder.com/400x200/000000/ffffff?text=Tech+News",
+      urlToImage: "https://picsum.photos/id/237/200/300",
       url: "#",
       category: "Technology"
     },
@@ -31,7 +31,7 @@ const Home = () => {
       description: "Athletes from around the world are making final preparations as the Summer Olympics draw near, with record participation expected.",
       source: "Sports Weekly",
       publishedAt: "2025-01-20T08:15:00Z",
-      urlToImage: "https://via.placeholder.com/400x200/000000/ffffff?text=Sports+News",
+      urlToImage: "https://picsum.photos/id/237/200/300",
       url: "#",
       category: "Sports"
     },
@@ -41,7 +41,7 @@ const Home = () => {
       description: "Financial analysts report positive trends in international markets following a period of uncertainty and fluctuation.",
       source: "Business Times",
       publishedAt: "2025-01-20T07:45:00Z",
-      urlToImage: "https://via.placeholder.com/400x200/000000/ffffff?text=Business+News",
+      urlToImage: "https://picsum.photos/id/237/200/300",
       url: "#",
       category: "Business"
     },
@@ -51,7 +51,7 @@ const Home = () => {
       description: "World leaders unveil ambitious new environmental initiatives aimed at combating climate change and promoting sustainability.",
       source: "Environmental Review",
       publishedAt: "2025-01-20T06:20:00Z",
-      urlToImage: "https://via.placeholder.com/400x200/000000/ffffff?text=Environment+News",
+      urlToImage: "https://picsum.photos/id/237/200/300",
       url: "#",
       category: "Environment"
     },
@@ -61,7 +61,7 @@ const Home = () => {
       description: "Scientists announce a significant advancement in treatment options for patients suffering from a previously incurable condition.",
       source: "Health Journal",
       publishedAt: "2025-01-20T05:10:00Z",
-      urlToImage: "https://via.placeholder.com/400x200/000000/ffffff?text=Health+News",
+      urlToImage: "https://picsum.photos/id/237/200/300",
       url: "#",
       category: "Health"
     },
@@ -71,7 +71,7 @@ const Home = () => {
       description: "This year's award nominations feature unexpected choices and celebrate diverse voices in entertainment industry.",
       source: "Entertainment Weekly",
       publishedAt: "2025-01-20T04:30:00Z",
-      urlToImage: "https://via.placeholder.com/400x200/000000/ffffff?text=Entertainment+News",
+      urlToImage: "https://picsum.photos/id/237/200/300",
       url: "#",
       category: "Entertainment"
     }

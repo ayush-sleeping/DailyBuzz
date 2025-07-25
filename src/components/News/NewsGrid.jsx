@@ -10,13 +10,15 @@ const NewsGrid = ({ articles, selectedCategory }) => {
           <h2 className="news-title">
             {selectedCategory === 'all' ? 'Latest News' : `${selectedCategory} News`}
           </h2>
-          <p className="news-count">
-            {articles.length} article{articles.length !== 1 ? 's' : ''} found
-          </p>
+          <div className="news-count-wrap">
+            <a className="see-all-link" href="#" style={{ display: 'inline-flex', alignItems: 'center', marginLeft: '1rem', fontWeight: 500, color: '#d96570', textDecoration: 'none', fontSize: '1rem' }}>
+              See all <span style={{ fontSize: '1.3em', marginLeft: '0.3em', display: 'inline-flex', alignItems: 'center' }}>→</span>
+            </a>
+          </div>
         </div>
 
         <div className="news-grid">
-          {articles.map(article => (
+          {articles.slice(0, 4).map(article => (
             <NewsCard key={article.id} article={article} />
           ))}
         </div>

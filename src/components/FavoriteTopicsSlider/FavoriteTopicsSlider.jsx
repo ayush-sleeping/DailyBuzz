@@ -1,19 +1,23 @@
+
 import React from 'react';
 import './FavoriteTopicsSlider.css';
+import banner1 from '../../assets/banner1.png';
+import banner2 from '../../assets/banner2.png';
+import banner3 from '../../assets/banner3.png';
 
 const topics = [
-  { name: 'AI & Tech', image: '/assets/banner1.png' },
-  { name: 'Climate', image: '/assets/banner2.png' },
-  { name: 'Elections', image: '/assets/banner3.png' },
-  { name: 'Health', image: '/assets/banner1.png' },
-  { name: 'Space', image: '/assets/banner2.png' },
-  { name: 'Business', image: '/assets/banner3.png' },
-  { name: 'AI & Tech', image: '/assets/banner1.png' },
-  { name: 'Climate', image: '/assets/banner2.png' },
-  { name: 'Elections', image: '/assets/banner3.png' },
-  { name: 'Health', image: '/assets/banner1.png' },
-  { name: 'Space', image: '/assets/banner2.png' },
-  { name: 'Business', image: '/assets/banner3.png' },
+  { name: 'AI & Tech', image: banner1 },
+  { name: 'Climate', image: banner2 },
+  { name: 'Elections', image: banner3 },
+  { name: 'Health', image: banner1 },
+  { name: 'Space', image: banner2 },
+  { name: 'Business', image: banner3 },
+  { name: 'AI & Tech', image: banner1 },
+  { name: 'Climate', image: banner2 },
+  { name: 'Elections', image: banner3 },
+  { name: 'Health', image: banner1 },
+  { name: 'Space', image: banner2 },
+  { name: 'Business', image: banner3 },
 ];
 
 const FavoriteTopicsSlider = () => (

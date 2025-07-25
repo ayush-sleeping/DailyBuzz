@@ -25,7 +25,13 @@ const NewsCard = ({ article }) => {
   };
 
   return (
-    <article className="news-card">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="news-card news-card-link"
+      style={{ textDecoration: 'none', color: 'inherit' }}
+    >
       {/* News Image */}
       <div className="news-image-container">
         {urlToImage ? (
@@ -42,9 +48,6 @@ const NewsCard = ({ article }) => {
             <span>📰</span>
           </div>
         )}
-        {category && (
-          <span className="news-category">{category}</span>
-        )}
       </div>
 
       {/* News Content */}
@@ -59,17 +62,8 @@ const NewsCard = ({ article }) => {
           <span className="news-source">{source}</span>
           <span className="news-date">{formatDate(publishedAt)}</span>
         </div>
-
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="read-more-btn"
-        >
-          Read Full Article
-        </a>
       </div>
-    </article>
+    </a>
   );
 };
 

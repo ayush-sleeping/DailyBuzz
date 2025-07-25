@@ -1,17 +1,21 @@
+
 import React from 'react';
 import './MustReadSlider.css';
+import banner1 from '../../assets/banner1.png';
+import banner2 from '../../assets/banner2.png';
+import banner3 from '../../assets/banner3.png';
 
 const mustRead = [
-  { title: 'The Future of AI', image: '/assets/banner2.png', summary: 'How artificial intelligence is shaping tomorrow.' },
-  { title: 'Climate Action Now', image: '/assets/banner3.png', summary: 'Urgent steps for a sustainable planet.' },
-  { title: 'Election Insights', image: '/assets/banner1.png', summary: 'What to expect in the coming elections.' },
-  { title: 'Space Race', image: '/assets/banner2.png', summary: 'Nations compete for the final frontier.' },
-  { title: 'Climate Action Now', image: '/assets/banner3.png', summary: 'Urgent steps for a sustainable planet.' },
-  { title: 'Election Insights', image: '/assets/banner1.png', summary: 'What to expect in the coming elections.' },
-  { title: 'Space Race', image: '/assets/banner2.png', summary: 'Nations compete for the final frontier.' },
-  { title: 'Climate Action Now', image: '/assets/banner3.png', summary: 'Urgent steps for a sustainable planet.' },
-  { title: 'Election Insights', image: '/assets/banner1.png', summary: 'What to expect in the coming elections.' },
-  { title: 'Space Race', image: '/assets/banner2.png', summary: 'Nations compete for the final frontier.' },
+  { title: 'The Future of AI', image: banner2, summary: 'How artificial intelligence is shaping tomorrow.' },
+  { title: 'Climate Action Now', image: banner3, summary: 'Urgent steps for a sustainable planet.' },
+  { title: 'Election Insights', image: banner1, summary: 'What to expect in the coming elections.' },
+  { title: 'Space Race', image: banner2, summary: 'Nations compete for the final frontier.' },
+  { title: 'Climate Action Now', image: banner3, summary: 'Urgent steps for a sustainable planet.' },
+  { title: 'Election Insights', image: banner1, summary: 'What to expect in the coming elections.' },
+  { title: 'Space Race', image: banner2, summary: 'Nations compete for the final frontier.' },
+  { title: 'Climate Action Now', image: banner3, summary: 'Urgent steps for a sustainable planet.' },
+  { title: 'Election Insights', image: banner1, summary: 'What to expect in the coming elections.' },
+  { title: 'Space Race', image: banner2, summary: 'Nations compete for the final frontier.' },
 ];
 
 const MustReadSlider = () => (
