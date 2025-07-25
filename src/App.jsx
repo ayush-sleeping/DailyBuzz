@@ -1,8 +1,10 @@
+
 import React from 'react';
 import TopBar from './components/Header/TopBar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
+import ScrollToTopIcon from './components/ScrollToTopIcon';
 import './App.css';
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
       <Header />
       <Home />
       <Footer />
+      <ScrollToTopIcon />
     </div>
   );
 }

@@ -5,39 +5,35 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-floating">
-        <div className="footer-container">
-          {/* Left Section - Brand & Description */}
-          <div className="footer-section">
+        <div className="footer-container" style={{ display: 'flex', gap: '2rem' }}>
+          <div className="footer-section footer-brand" style={{ flex: '1 1 50%' }}>
             <h3 className="footer-logo">DailyBuzz</h3>
             <p className="footer-description">
               Your trusted source for daily news and updates from around the world.
             </p>
           </div>
-
-          {/* Middle Section - Quick Links */}
-          <div className="footer-section">
-            <h4 className="footer-title">Quick Links</h4>
-            <ul className="footer-links">
-              <li><a href="#" className="footer-link">Home</a></li>
-              <li><a href="#" className="footer-link">Sports</a></li>
-              <li><a href="#" className="footer-link">Technology</a></li>
-              <li><a href="#" className="footer-link">Business</a></li>
-              <li><a href="#" className="footer-link">Entertainment</a></li>
-            </ul>
-          </div>
-
-          {/* Right Section - Contact & Social */}
-          <div className="footer-section">
-            <h4 className="footer-title">Connect With Us</h4>
-            <div className="footer-social">
-              <a href="#" className="social-link">Twitter</a>
-              <a href="#" className="social-link">Facebook</a>
-              <a href="#" className="social-link">Instagram</a>
-              <a href="#" className="social-link">LinkedIn</a>
+          <div className="footer-right" style={{ flex: '1 1 50%', display: 'flex', flexDirection: 'row', gap: '2.2rem' }}>
+            <div className="footer-section footer-links-section" style={{ flex: 1 }}>
+              <div className="footer-title-wrap">
+                <h4 className="footer-title">Quick Links</h4>
+              </div>
+              <ul className="footer-links">
+                <li className="footer-link">Home</li>
+                <li className="footer-link">World</li>
+                <li className="footer-link">Politics</li>
+                <li className="footer-link">Business</li>
+              </ul>
             </div>
-            <div className="footer-contact">
-              <p>Email: contact@dailybuzz.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
+            <div className="footer-section footer-trending" style={{ flex: 1 }}>
+              <div className="footer-title-wrap">
+                <h4 className="footer-title">Trending Topics</h4>
+              </div>
+              <ul className="footer-links">
+                <li className="footer-link">Home</li>
+                <li className="footer-link">World</li>
+                <li className="footer-link">Politics</li>
+                <li className="footer-link">Business</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -49,9 +45,9 @@ const Footer = () => {
               © 2025 DailyBuzz. All rights reserved.
             </p>
             <div className="footer-legal">
-              <a href="#" className="legal-link">Privacy Policy</a>
-              <a href="#" className="legal-link">Terms of Service</a>
-              <a href="#" className="legal-link">About Us</a>
+              <span className="legal-link">Privacy Policy</span>
+              <span className="legal-link">Terms of Service</span>
+              <span className="legal-link">About Us</span>
             </div>
           </div>
         </div>

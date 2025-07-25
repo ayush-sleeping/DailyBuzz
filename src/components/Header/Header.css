@@ -1,3 +1,41 @@
+/* Get in touch button styles */
+.get-in-touch-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.80rem;
+  font-weight: 500;
+  color: #2a2a2a;
+  transition: all 0.2s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.get-in-touch-toggle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(to right, #4285f4, #d96570);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .get-in-touch-toggle:hover {
   background: #111;
   color: #fff;
@@ -5,24 +43,27 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   transition: all 0.2s;
 }
+
 .get-in-touch-toggle:hover .get-in-touch-icon {
   color: #fff;
 }
-/* Get in touch button styles */
-.get-in-touch-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: none;
-  border: 1px solid #e5e7eb;
-  padding: 0.6rem 1rem;
+
+.get-in-touch-toggle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   border-radius: 50px;
-  cursor: pointer;
-  font-size: 0.80rem;
-  font-weight: 500;
-  color: black;
-  transition: all 0.2s ease;
+  padding: 2px;
+  background: linear-gradient(to right, #4285f4, #d96570);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 0;
 }
+
 .header {
   position: sticky;
   top: 1rem;
@@ -40,7 +81,7 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(10px);
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 8fr;
   align-items: center;
   gap: 2rem;
   transition: all 0.3s ease;
@@ -58,7 +99,7 @@
   font-weight: 800;
   margin: 0;
   letter-spacing: -0.5px;
-  color: black;
+  color: #2a2a2a;
   line-height: 1;
 }
 
@@ -81,7 +122,7 @@
 }
 
 .nav-link {
-  color: black;
+  color: #2a2a2a;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.80rem;
@@ -93,7 +134,7 @@
 }
 
 .nav-link:hover {
-  background-color: black;
+  background-color: #2a2a2a;
   color: white;
   border-radius: 50px;
 }
@@ -111,18 +152,18 @@
   align-items: center;
   gap: 0.5rem;
   background: none;
-  border: 1px solid #e5e7eb;
+  border: 0px solid #e5e7eb;
   padding: 0.6rem 1rem;
   border-radius: 50px;
   cursor: pointer;
   font-size: 0.80rem;
   font-weight: 500;
-  color: black;
+  color: #2a2a2a;
   transition: all 0.2s ease;
 }
 
 .search-toggle:hover {
-  border-color: black;
+  border-color: #2a2a2a;
   background-color: #f9fafb;
 }
 
@@ -156,7 +197,7 @@
   display: block;
   height: 2px;
   width: 100%;
-  background-color: black;
+  background-color: #2a2a2a;
   border-radius: 1px;
   transition: all 0.3s ease;
 }
@@ -227,7 +268,7 @@
 .search-header h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: black;
+  color: #2a2a2a;
   margin: 0;
 }
 
@@ -249,7 +290,7 @@
 
 .close-search:hover {
   background-color: #f3f4f6;
-  color: black;
+  color: #2a2a2a;
 }
 
 .search-form {
@@ -275,7 +316,7 @@
 }
 
 .search-input:focus {
-  border-color: black;
+  border-color: #2a2a2a;
   background-color: white;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
@@ -302,12 +343,12 @@
 
 .clear-search:hover {
   background-color: #f3f4f6;
-  color: black;
+  color: #2a2a2a;
 }
 
 .search-submit {
   padding: 1rem 2rem;
-  background-color: black;
+  background-color: #2a2a2a;
   color: white;
   border: none;
   border-radius: 8px;
@@ -348,7 +389,7 @@
 }
 
 .suggestion:hover {
-  background-color: black;
+  background-color: #2a2a2a;
   color: white;
 }
 

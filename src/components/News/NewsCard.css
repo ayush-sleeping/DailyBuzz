@@ -47,7 +47,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: black;
+  background-color: #2a2a2a;
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -66,7 +66,7 @@
 .news-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: black;
+  color: #2a2a2a;
   margin: 0 0 0.5rem 0;
   line-height: 1.4;
   display: -webkit-box;
@@ -98,7 +98,7 @@
 
 .news-source {
   font-weight: 600;
-  color: black;
+  color: #2a2a2a;
 }
 
 .news-date {
@@ -106,7 +106,7 @@
 }
 
 .read-more-btn {
-  background-color: black;
+  background-color:  #2a2a2a;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
