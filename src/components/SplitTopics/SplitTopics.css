@@ -1,9 +1,9 @@
 .split-topics-section {
   margin: 2.5rem 0 1.5rem 0;
   max-width: 1400px;
-  padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
+    padding: 0 2rem;
 }
 .split-topics-grid {
   display: flex;
@@ -22,7 +22,7 @@
 }
 .split-topic-img {
   width: 100%;
-  height: 120px;
+  height: 220px;
   background-size: cover;
   background-position: center;
 }
