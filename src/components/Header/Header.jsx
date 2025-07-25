@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '/dailybuzz-icon.svg';
 
@@ -33,11 +34,11 @@ const Header = () => {
 
                 {/* Navigation - Center */}
                 <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-                    <a href="#" className="nav-link">Home</a>
-                    <a href="#" className="nav-link">Sports</a>
-                    <a href="#" className="nav-link">Technology</a>
-                    <a href="#" className="nav-link">Business</a>
-                    <a href="#" className="nav-link">Entertainment</a>
+                    <Link to="/" className="nav-link">Home</Link>
+                    <Link to="/category/Sports" className="nav-link">Sports</Link>
+                    <Link to="/category/Technology" className="nav-link">Technology</Link>
+                    <Link to="/category/Business" className="nav-link">Business</Link>
+                    <Link to="/category/Entertainment" className="nav-link">Entertainment</Link>
                 </nav>
 
                 {/* Search & Mobile Menu - Right */}

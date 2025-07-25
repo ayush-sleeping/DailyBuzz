@@ -1,19 +1,19 @@
 
 import React from 'react';
 import './SplitTopics.css';
-import banner1 from '../../assets/banner1.png';
-import banner3 from '../../assets/banner3.png';
+import banner1 from '../../assets/common/formula1.png';
+import banner2 from '../../assets/common/california.jpg';
 
 const splitTopics = [
   {
-    title: 'Deep Dives',
+    title: 'Formula 1',
     image: banner1,
-    description: 'In-depth analysis and features on today’s most important stories.'
+    description: 'All the latest race results, team news, and behind-the-scenes insights from the world of Formula 1.'
   },
   {
-    title: 'Opinion',
-    image: banner3,
-    description: 'Expert perspectives and commentary from thought leaders.'
+    title: 'Silicon Valley',
+    image: banner2,
+    description: 'Breaking tech news, startup stories, and innovation trends shaping the future from Silicon Valley.'
   }
 ];
 

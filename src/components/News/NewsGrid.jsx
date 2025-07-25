@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NewsCard from './NewsCard';
 import './NewsGrid.css';
 
@@ -11,9 +12,13 @@ const NewsGrid = ({ articles, selectedCategory }) => {
             {selectedCategory === 'all' ? 'Latest News' : `${selectedCategory} News`}
           </h2>
           <div className="news-count-wrap">
-            <a className="see-all-link" href="#" style={{ display: 'inline-flex', alignItems: 'center', marginLeft: '1rem', fontWeight: 500, color: '#d96570', textDecoration: 'none', fontSize: '1rem' }}>
+            <Link
+              className="see-all-link"
+              to={selectedCategory === 'all' ? '/' : `/category/${selectedCategory}`}
+              style={{ display: 'inline-flex', alignItems: 'center', marginLeft: '1rem', fontWeight: 500, color: '#d96570', textDecoration: 'none', fontSize: '1rem' }}
+            >
               See all <span style={{ fontSize: '1.3em', marginLeft: '0.3em', display: 'inline-flex', alignItems: 'center' }}>→</span>
-            </a>
+            </Link>
           </div>
         </div>
 
