@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import HeroSection from '../components/HeroSection/HeroSection';
 import CategoryFilter from '../components/CategoryFilter/CategoryFilter';
 import NewsGrid from '../components/News/NewsGrid';
+import FavoriteTopicsSlider from '../components/FavoriteTopicsSlider/FavoriteTopicsSlider';
+import MustReadSlider from '../components/MustReadSlider/MustReadSlider';
+import SplitTopics from '../components/SplitTopics/SplitTopics';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 import './Home.css';
 
@@ -112,10 +115,15 @@ const Home = () => {
       {loading ? (
         <LoadingSpinner message="Loading news articles..." />
       ) : (
-        <NewsGrid
-          articles={filteredArticles}
-          selectedCategory={selectedCategory}
-        />
+        <>
+          <NewsGrid
+            articles={filteredArticles}
+            selectedCategory={selectedCategory}
+          />
+          <FavoriteTopicsSlider />
+          <MustReadSlider />
+          <SplitTopics />
+        </>
       )}
     </div>
   );

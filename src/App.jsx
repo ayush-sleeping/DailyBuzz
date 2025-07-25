@@ -4,7 +4,7 @@ import TopBar from './components/Header/TopBar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
-import ScrollToTopIcon from './components/ScrollToTopIcon';
+import ScrollToTopIcon from './components/ScrollToTopIcon/ScrollToTopIcon';
 import './App.css';
 
 function App() {

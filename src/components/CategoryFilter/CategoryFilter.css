@@ -1,5 +1,5 @@
 .category-section {
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   background-color: #fafafa;
 }
 
@@ -28,7 +28,7 @@
 
 .category-btn {
   padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   background-color: white;
   color: #2a2a2a;
   border-radius: 25px;

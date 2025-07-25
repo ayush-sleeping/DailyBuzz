@@ -1,9 +1,8 @@
 .news-card {
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -120,6 +119,7 @@
 
 .read-more-btn:hover {
   background-color: #333;
+  color: white;
 }
 
 /* Responsive adjustments */
