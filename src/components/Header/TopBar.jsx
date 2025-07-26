@@ -7,7 +7,7 @@ const TopBar = () => {
       <div className="topbar-content">
         <span className="topbar-title">DailyBuzz</span>
         <a
-          href="https://github.com/ayush-sleeping/DailyBuzz"
+          href="https://github.com/ayush-sleeping/DailyBuzz/"
           className="topbar-github"
           target="_blank"
           rel="noopener noreferrer"

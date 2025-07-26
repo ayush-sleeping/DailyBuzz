@@ -35,10 +35,10 @@ const Header = () => {
                 {/* Navigation - Center */}
                 <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
                     <Link to="/" className="nav-link">Home</Link>
-                    <Link to="/category/Sports" className="nav-link">Sports</Link>
-                    <Link to="/category/Technology" className="nav-link">Technology</Link>
-                    <Link to="/category/Business" className="nav-link">Business</Link>
-                    <Link to="/category/Entertainment" className="nav-link">Entertainment</Link>
+                    <Link to="/category/sports" className="nav-link">Sports</Link>
+                    <Link to="/category/technology" className="nav-link">Technology</Link>
+                    <Link to="/category/business" className="nav-link">Business</Link>
+                    <Link to="/category/entertainment" className="nav-link">Entertainment</Link>
                 </nav>
 
                 {/* Search & Mobile Menu - Right */}

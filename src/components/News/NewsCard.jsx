@@ -59,8 +59,8 @@ const NewsCard = ({ article }) => {
         </p>
 
         <div className="news-meta">
-          <span className="news-source">{source}</span>
-          <span className="news-date">{formatDate(publishedAt)}</span>
+          <span className="news-source">{source?.name || "Unknown Source"}</span>
+          <span className="news-date">{publishedAt ? formatDate(publishedAt) : ""}</span>
         </div>
       </div>
     </a>
