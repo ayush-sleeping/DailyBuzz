@@ -10,20 +10,20 @@ import './App.css';
 
 
 function App() {
-  return (
-    <Router basename="/DailyBuzz">
-      <div className="app">
-        <TopBar />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/category/:category" element={<CategoryPage />} />
-        </Routes>
-        <Footer />
-        <ScrollToTopIcon />
-      </div>
-    </Router>
-  );
+    return (
+        <Router basename="/DailyBuzz">
+            <div className="app">
+                <TopBar />
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/category/:category" element={<CategoryPage />} />
+                </Routes>
+                <Footer />
+                <ScrollToTopIcon />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

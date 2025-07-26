@@ -2,16 +2,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './FavoriteTopicsSlider.css';
-import banner1 from '../../assets/logo/f1_logo.jpg';
-import banner2 from '../../assets/logo/cricket_logo.jpg';
-import banner3 from '../../assets/logo/chess_logo.jpg';
-import banner4 from '../../assets/logo/football_logo.jpg';
-import banner5 from '../../assets/logo/apple_logo.jpg';
-import banner6 from '../../assets/logo/openai_logo.jpg';
-import banner7 from '../../assets/logo/coding_logo.jpg';
-import banner8 from '../../assets/logo/siliconvalley_logo.jpg';
-import banner9 from '../../assets/logo/google_logo.jpg';
-import banner10 from '../../assets/logo/india_logo.jpg';
+import banner1 from '../../../assets/logo/f1_logo.jpg';
+import banner2 from '../../../assets/logo/cricket_logo.jpg';
+import banner3 from '../../../assets/logo/chess_logo.jpg';
+import banner4 from '../../../assets/logo/football_logo.jpg';
+import banner5 from '../../../assets/logo/apple_logo.jpg';
+import banner6 from '../../../assets/logo/openai_logo.jpg';
+import banner7 from '../../../assets/logo/coding_logo.jpg';
+import banner8 from '../../../assets/logo/siliconvalley_logo.jpg';
+import banner9 from '../../../assets/logo/google_logo.jpg';
+import banner10 from '../../../assets/logo/india_logo.jpg';
 
 
 const topics = [

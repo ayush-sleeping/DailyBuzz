@@ -1,8 +1,8 @@
 
 import React from 'react';
 import './SplitTopics.css';
-import banner1 from '../../assets/common/formula1.png';
-import banner2 from '../../assets/common/california.jpg';
+import banner1 from '../../../assets/common/formula1.png';
+import banner2 from '../../../assets/common/california.jpg';
 
 const splitTopics = [
   {

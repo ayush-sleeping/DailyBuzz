@@ -1,9 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import NewsGrid from '../components/News/NewsGrid';
-
-// This should be replaced with real API or context in production
-import mockArticles from './mockArticles';
+import NewsGrid from '../components/news/NewsGrid';
+import mockArticles from '../data/mockArticles';
 
 const CategoryPage = () => {
   const { category } = useParams();

@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import banner1 from '../../assets/banner4.jpg';
+import banner1 from '../../../assets/banner4.jpg';
 
 const HeroSection = ({ title, subtitle }) => {
   return (
