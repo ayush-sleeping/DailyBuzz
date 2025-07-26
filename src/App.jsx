@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
+import SearchResultsPage from './pages/SearchResultsPage';
 import ScrollToTopIcon from './components/ScrollToTopIcon/ScrollToTopIcon';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/category/:category" element={<CategoryPage />} />
+                    <Route path="/search/:searchTerm" element={<SearchResultsPage />} />
                 </Routes>
                 <Footer />
                 <ScrollToTopIcon />

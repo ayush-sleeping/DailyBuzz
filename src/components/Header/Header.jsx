@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 import logo from '/dailybuzz-icon.svg';
 
@@ -7,10 +7,13 @@ const Header = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     const handleSearch = (e) => {
         e.preventDefault();
-        console.log('Searching for:', searchTerm);
+        if (searchTerm.trim()) {
+            navigate(`/search/${encodeURIComponent(searchTerm.trim())}`);
+        }
         setIsSearchOpen(false);
         setSearchTerm('');
     };
@@ -100,10 +103,20 @@ const Header = () => {
                         </form>
                         <div className="search-suggestions">
                             <p>Popular searches:</p>
-                            <span className="suggestion">Breaking News</span>
-                            <span className="suggestion">Politics</span>
-                            <span className="suggestion">Climate Change</span>
-                            <span className="suggestion">Stock Market</span>
+                            {['Breaking News', 'Politics', 'Climate Change', 'Stock Market'].map((suggestion) => (
+                                <span
+                                    key={suggestion}
+                                    className="suggestion"
+                                    style={{ cursor: 'pointer' }}
+                                    onClick={() => {
+                                        navigate(`/search/${encodeURIComponent(suggestion)}`);
+                                        setIsSearchOpen(false);
+                                        setSearchTerm('');
+                                    }}
+                                >
+                                    {suggestion}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 </div>
