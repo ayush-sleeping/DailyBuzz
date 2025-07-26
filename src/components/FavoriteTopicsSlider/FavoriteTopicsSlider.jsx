@@ -29,7 +29,7 @@ const topics = [
 
 const FavoriteTopicsSlider = () => (
   <section className="favorite-topics-section">
-    <h3 className="favorite-topics-title">Your Favorite Topics</h3>
+    <h3 className="favorite-topics-title">Editor's Favorite</h3>
     <div className="favorite-topics-slider">
       {topics.map((topic, idx) => (
         <Link
