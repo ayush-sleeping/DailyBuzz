@@ -46,7 +46,7 @@ Here are some screenshots of DailyBuzz running with a valid NewsAPI key:
   <br><br>
 </div>
 
----
+
 [⬆️ Back to Top](#table-of-contents)
 
 <br>
