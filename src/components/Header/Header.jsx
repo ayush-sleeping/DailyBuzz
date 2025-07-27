@@ -53,7 +53,7 @@ const Header = () => {
                         </svg>
                     </button>
 
-                    <button className="get-in-touch-toggle" onClick={() => window.open('mailto:contact@dailybuzz.com', '_blank')} title="Get in touch">
+                    <button className="get-in-touch-toggle" onClick={() => window.open('mailto:ayushbm84@gmail.com', '_blank')} title="Get in touch">
                         <span className="get-in-touch-text">Get in touch</span>
                     </button>
 

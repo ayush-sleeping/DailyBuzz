@@ -6,6 +6,9 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import SearchResultsPage from './pages/SearchResultsPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import AboutUs from './pages/AboutUs';
 import ScrollToTopIcon from './components/ScrollToTopIcon/ScrollToTopIcon';
 import './App.css';
 
@@ -20,6 +23,9 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/category/:category" element={<CategoryPage />} />
                     <Route path="/search/:searchTerm" element={<SearchResultsPage />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/terms-of-service" element={<TermsOfService />} />
+                    <Route path="/about-us" element={<AboutUs />} />
                 </Routes>
                 <Footer />
                 <ScrollToTopIcon />

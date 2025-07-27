@@ -46,9 +46,9 @@ const Footer = () => {
                             © 2025 DailyBuzz. All rights reserved.
                         </p>
                         <div className="footer-legal">
-                            <span className="legal-link">Privacy Policy</span>
-                            <span className="legal-link">Terms of Service</span>
-                            <span className="legal-link">About Us</span>
+                            <Link to="/privacy-policy" className="legal-link" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link>
+                            <Link to="/terms-of-service" className="legal-link" style={{ color: 'inherit', textDecoration: 'none' }}>Terms of Service</Link>
+                            <Link to="/about-us" className="legal-link" style={{ color: 'inherit', textDecoration: 'none' }}>About Us</Link>
                         </div>
                     </div>
                 </div>
