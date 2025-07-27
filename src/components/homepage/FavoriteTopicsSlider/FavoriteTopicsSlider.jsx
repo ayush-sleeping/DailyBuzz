@@ -1,3 +1,6 @@
+// FavoriteTopicsSlider.jsx
+// Displays a horizontal slider of editor's favorite topics for quick access/search.
+// Used on the homepage to highlight trending or interesting topics.
 
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -13,7 +16,7 @@ import banner8 from '../../../assets/logo/siliconvalley_logo.jpg';
 import banner9 from '../../../assets/logo/google_logo.jpg';
 import banner10 from '../../../assets/logo/india_logo.jpg';
 
-
+// List of favorite topics with their display images
 const topics = [
     { name: 'f1', image: banner1 },
     { name: 'cricket', image: banner2 },
@@ -28,11 +31,13 @@ const topics = [
 ];
 
 const FavoriteTopicsSlider = () => (
+    // Renders a horizontal slider of clickable topic cards
     <section className="favorite-topics-section">
         <h3 className="favorite-topics-title">Editor's Favorite</h3>
         <div className="favorite-topics-slider">
             {topics.map((topic, idx) => (
                 <Link
+                    // Use encodeURIComponent to safely pass topic name in URL
                     to={`/search/${encodeURIComponent(topic.name)}`}
                     className="favorite-topic-card"
                     key={topic.name + idx}

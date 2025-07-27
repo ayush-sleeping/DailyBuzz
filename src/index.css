@@ -1,21 +1,49 @@
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #d96570;
+  --accent: #f7c873;
+  --bg: #fff;
+  --text: #2a2a2a;
+  --border: #eaeaea;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: white;
-  color: #2a2a2a;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
+  font-size: 16px;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
-  color: #2a2a2a;
+  color: var(--text);
+  transition: color 0.2s;
 }
 
-a:hover {
-  color: #333;
+a:hover, a:focus {
+  color: var(--primary);
+  outline: none;
+}
+
+button:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--primary);
+  color: #fff;
 }

@@ -1,3 +1,6 @@
+// App.jsx - Main application component for DailyBuzz
+// Sets up global layout, routing, and shared UI elements
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TopBar from './components/Header/TopBar';
@@ -12,11 +15,19 @@ import AboutUs from './pages/AboutUs';
 import ScrollToTopIcon from './components/ScrollToTopIcon/ScrollToTopIcon';
 import './App.css';
 
-
 function App() {
     return (
+        // Router with basename for GitHub Pages deployment under /DailyBuzz
         <Router basename="/DailyBuzz">
             <div className="app">
+                {/* Top notification bar */}
+                {/* Main site header and navigation */}
+                {/* Main content routes */}
+                {/* Homepage */}
+                {/* Category news page */}
+                {/* Search results page */}
+                {/* Legal and info pages */}
+                {/* Footer and scroll-to-top button */}
                 <TopBar />
                 <Header />
                 <Routes>

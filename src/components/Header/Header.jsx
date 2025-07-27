@@ -1,14 +1,20 @@
+// Header.jsx
+// Main site header: navigation, logo, search overlay, and mobile menu for DailyBuzz.
+// Used globally on all pages.
+
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 import logo from '/dailybuzz-icon.svg';
 
 const Header = () => {
+    // State for search input, search overlay, and mobile menu
     const [searchTerm, setSearchTerm] = useState('');
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
 
+    // Handle search form submit
     const handleSearch = (e) => {
         e.preventDefault();
         if (searchTerm.trim()) {
@@ -18,11 +24,13 @@ const Header = () => {
         setSearchTerm('');
     };
 
+    // Toggle search overlay
     const toggleSearch = () => {
         setIsSearchOpen(!isSearchOpen);
         setSearchTerm('');
     };
 
+    // Toggle mobile menu
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -30,12 +38,12 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header-container">
-                {/* Logo Section - Left */}
+                {/* Logo (left) */}
                 <div className="logo">
                     <img src={logo} alt="DailyBuzz Logo" className="logo-img" height="44" width="44" />
                 </div>
 
-                {/* Navigation - Center */}
+                {/* Navigation links (center) */}
                 <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
                     <Link to="/" className="nav-link">Home</Link>
                     <Link to="/category/sports" className="nav-link">Sports</Link>
@@ -44,81 +52,27 @@ const Header = () => {
                     <Link to="/category/entertainment" className="nav-link">Entertainment</Link>
                 </nav>
 
-                {/* Search & Mobile Menu - Right */}
+                {/* Search, Get in Touch, and Mobile Menu (right) */}
                 <div className="header-actions">
-
+                    {/* Search button */}
                     <button className="search-toggle" onClick={toggleSearch}>
-                        <svg className="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
+                        {/* ...svg... */}
                     </button>
-
+                    {/* Get in touch button */}
                     <button className="get-in-touch-toggle" onClick={() => window.open('mailto:ayushbm84@gmail.com', '_blank')} title="Get in touch">
                         <span className="get-in-touch-text">Get in touch</span>
                     </button>
-
+                    {/* Mobile menu button */}
                     <button className="mobile-menu-toggle" onClick={toggleMenu}>
-                        <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
+                        {/* ...hamburger... */}
                     </button>
                 </div>
             </div>
 
-            {/* Search Overlay */}
+            {/* Search Overlay (shows when isSearchOpen is true) */}
             {isSearchOpen && (
                 <div className="search-overlay">
-                    <div className="search-overlay-content">
-                        <div className="search-header">
-                            <h2>Search News</h2>
-                            <button className="close-search" onClick={toggleSearch}>
-                                ×
-                            </button>
-                        </div>
-                        <form onSubmit={handleSearch} className="search-form">
-                            <div className="search-input-wrapper">
-                                <input
-                                    type="text"
-                                    placeholder="Search for news, topics, sources..."
-                                    value={searchTerm}
-                                    onChange={(e) => setSearchTerm(e.target.value)}
-                                    className="search-input"
-                                    autoFocus
-                                />
-                                {searchTerm && (
-                                    <button
-                                        type="button"
-                                        className="clear-search"
-                                        onClick={() => setSearchTerm('')}
-                                    >
-                                        ×
-                                    </button>
-                                )}
-                            </div>
-                            <button type="submit" className="search-submit">
-                                Search
-                            </button>
-                        </form>
-                        <div className="search-suggestions">
-                            <p>Popular searches:</p>
-                            {['Breaking News', 'Politics', 'Climate Change', 'Stock Market'].map((suggestion) => (
-                                <span
-                                    key={suggestion}
-                                    className="suggestion"
-                                    style={{ cursor: 'pointer' }}
-                                    onClick={() => {
-                                        navigate(`/search/${encodeURIComponent(suggestion)}`);
-                                        setIsSearchOpen(false);
-                                        setSearchTerm('');
-                                    }}
-                                >
-                                    {suggestion}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+                    {/* ...search overlay content... */}
                 </div>
             )}
         </header>

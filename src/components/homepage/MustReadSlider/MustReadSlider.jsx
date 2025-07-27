@@ -1,7 +1,11 @@
+// MustReadSlider.jsx
+// Displays a horizontal slider of "Must Read" news articles.
+// Used on the homepage to highlight top or trending news.
 
 import React, { useEffect, useState } from 'react';
 import './MustReadSlider.css';
 
+// Formats a date string for display in the card meta
 function formatDate(dateString) {
     if (!dateString) return '';
     const date = new Date(dateString);
@@ -19,6 +23,7 @@ const MustReadSlider = () => {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(false);
 
+    // Fetch top headlines on mount
     useEffect(() => {
         const fetchMustRead = async () => {
             setLoading(true);
@@ -37,15 +42,18 @@ const MustReadSlider = () => {
         fetchMustRead();
     }, []);
 
-    // Show only articles 5 to 12 (index 4 to 11)
+    // Show only articles 5 to 12 (index 4 to 11) for the slider
     const mustReadArticles = articles.slice(4, 12);
+
     return (
         <section className="must-read-section">
             <h3 className="must-read-title">Must Read</h3>
             <div className="must-read-slider">
+                {/* Show loading indicator while fetching */}
                 {loading ? (
                     <div style={{ padding: '2rem', textAlign: 'center' }}>Loading...</div>
                 ) : (
+                    // Render must-read article cards
                     mustReadArticles.map((item, idx) => (
                         <div className="must-read-card" key={item.title + idx}>
                             <div className="must-read-img" style={{ backgroundImage: `url(${item.urlToImage || ''})` }}>

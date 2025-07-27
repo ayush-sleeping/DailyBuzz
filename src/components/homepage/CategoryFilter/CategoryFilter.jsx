@@ -1,11 +1,19 @@
+// CategoryFilter.jsx
+// Renders a horizontal list of category filter buttons for news browsing.
+// Used on the Home page and any page where category selection is needed.
+
 import React from 'react';
 import './CategoryFilter.css';
 
+// Props:
+// - categories: array of category names
+// - selectedCategory: currently selected category
+// - onCategoryChange: callback when a category is selected
 const CategoryFilter = ({ categories, selectedCategory, onCategoryChange }) => {
     return (
         <section className="category-section">
             <div className="category-container">
-                {/* <h2 className="category-title">Browse by Category</h2> */}
+                {/* Category filter buttons */}
                 <div className="category-filters">
                     {categories.map(category => (
                         <button

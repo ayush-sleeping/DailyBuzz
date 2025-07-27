@@ -1,3 +1,6 @@
+// SplitTopics.jsx
+// Displays a grid of featured split-topic cards for quick navigation to topic searches.
+// Used on the homepage to highlight selected topics.
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -5,6 +8,7 @@ import './SplitTopics.css';
 import banner1 from '../../../assets/common/formula1.png';
 import banner2 from '../../../assets/common/california.jpg';
 
+// List of featured topics with images and descriptions
 const splitTopics = [
     {
         title: 'Formula 1',
@@ -18,10 +22,10 @@ const splitTopics = [
     }
 ];
 
-
 const SplitTopics = () => {
     const navigate = useNavigate();
     return (
+        // Renders a grid of clickable topic cards
         <section className="split-topics-section">
             <div className="split-topics-grid">
                 {splitTopics.map((topic, idx) => (
@@ -29,6 +33,7 @@ const SplitTopics = () => {
                         className="split-topic-card"
                         key={topic.title + idx}
                         style={{ cursor: 'pointer' }}
+                        // Use encodeURIComponent to safely pass topic title in URL
                         onClick={() => navigate(`/search/${encodeURIComponent(topic.title)}`)}
                     >
                         <div className="split-topic-img" style={{ backgroundImage: `url(${topic.image})` }} />
