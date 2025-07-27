@@ -33,7 +33,7 @@ const FavoriteTopicsSlider = () => (
         <div className="favorite-topics-slider">
             {topics.map((topic, idx) => (
                 <Link
-                    to={`/category/${encodeURIComponent(topic.name)}`}
+                    to={`/search/${encodeURIComponent(topic.name)}`}
                     className="favorite-topic-card"
                     key={topic.name + idx}
                     style={{ textDecoration: 'none', color: 'inherit' }}

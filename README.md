@@ -3,7 +3,9 @@
 
 A visually rich, modular news web app built with React and Vite, fetching live news from NewsAPI.org. Explore trending stories, search topics, and browse by category with a beautiful, responsive UI.
 
----
+<br>
+
+<br>
 
 ## Table of Contents
 1. [About the Project](#about-the-project)
@@ -18,7 +20,9 @@ A visually rich, modular news web app built with React and Vite, fetching live n
 
 [⬆️ Back to Top](#dailybuzz-modern-react-news-portal)
 
----
+<br>
+
+<br>
 
 ## About the Project
 DailyBuzz is a personal project that delivers the latest news in a modern, card-based UI. Users can:
@@ -29,7 +33,9 @@ DailyBuzz is a personal project that delivers the latest news in a modern, card-
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## Tech Stack
 - **React** (with Hooks)
@@ -41,7 +47,9 @@ DailyBuzz is a personal project that delivers the latest news in a modern, card-
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## Getting Started
 1. **Clone the repo:**
@@ -67,7 +75,9 @@ DailyBuzz is a personal project that delivers the latest news in a modern, card-
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## Folder Structure
 ```
@@ -98,7 +108,9 @@ DailyBuzz/
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## Color Palette
 - **Primary:** #d96570 (rose red)
@@ -109,21 +121,27 @@ DailyBuzz/
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## Image Credits
 All images and logos used in this project are downloaded from Pinterest. Thanks to the creators and Pinterest for the resources.
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## API Credits
 Thanks to [NewsAPI.org](https://newsapi.org/) for providing a developer subscription with 100 requests per day.
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## What I Learned
 - Building a modular, scalable React project structure
@@ -135,7 +153,9 @@ Thanks to [NewsAPI.org](https://newsapi.org/) for providing a developer subscrip
 
 [⬆️ Back to Top](#table-of-contents)
 
----
+<br>
+
+<br>
 
 ## More Info
 - This is a personal project; contributions are not accepted.
