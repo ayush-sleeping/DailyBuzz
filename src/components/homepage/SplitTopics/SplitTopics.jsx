@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SplitTopics.css';
 import banner1 from '../../../assets/common/formula1.png';
 import banner2 from '../../../assets/common/california.jpg';
@@ -17,20 +18,29 @@ const splitTopics = [
     }
 ];
 
-const SplitTopics = () => (
-    <section className="split-topics-section">
-        <div className="split-topics-grid">
-            {splitTopics.map((topic, idx) => (
-                <div className="split-topic-card" key={topic.title + idx}>
-                    <div className="split-topic-img" style={{ backgroundImage: `url(${topic.image})` }} />
-                    <div className="split-topic-content">
-                        <h4 className="split-topic-title">{topic.title}</h4>
-                        <p className="split-topic-desc">{topic.description}</p>
+
+const SplitTopics = () => {
+    const navigate = useNavigate();
+    return (
+        <section className="split-topics-section">
+            <div className="split-topics-grid">
+                {splitTopics.map((topic, idx) => (
+                    <div
+                        className="split-topic-card"
+                        key={topic.title + idx}
+                        style={{ cursor: 'pointer' }}
+                        onClick={() => navigate(`/search/${encodeURIComponent(topic.title)}`)}
+                    >
+                        <div className="split-topic-img" style={{ backgroundImage: `url(${topic.image})` }} />
+                        <div className="split-topic-content">
+                            <h4 className="split-topic-title">{topic.title}</h4>
+                            <p className="split-topic-desc">{topic.description}</p>
+                        </div>
                     </div>
-                </div>
-            ))}
-        </div>
-    </section>
-);
+                ))}
+            </div>
+        </section>
+    );
+};
 
 export default SplitTopics;

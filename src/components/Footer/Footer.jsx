@@ -19,10 +19,10 @@ const Footer = () => {
                                 <h4 className="footer-title">Quick Links</h4>
                             </div>
                             <ul className="footer-links">
-                                <li className="footer-link"><Link to="/category/F1" style={{ color: 'inherit', textDecoration: 'none' }}>F1</Link></li>
-                                <li className="footer-link"><Link to="/category/Cricket" style={{ color: 'inherit', textDecoration: 'none' }}>Cricket</Link></li>
-                                <li className="footer-link"><Link to="/category/Chess" style={{ color: 'inherit', textDecoration: 'none' }}>Chess</Link></li>
-                                <li className="footer-link"><Link to="/category/Football" style={{ color: 'inherit', textDecoration: 'none' }}>Football</Link></li>
+                                <li className="footer-link"><Link to="/search/F1" style={{ color: 'inherit', textDecoration: 'none' }}>F1</Link></li>
+                                <li className="footer-link"><Link to="/search/Cricket" style={{ color: 'inherit', textDecoration: 'none' }}>Cricket</Link></li>
+                                <li className="footer-link"><Link to="/search/Chess" style={{ color: 'inherit', textDecoration: 'none' }}>Chess</Link></li>
+                                <li className="footer-link"><Link to="/search/Football" style={{ color: 'inherit', textDecoration: 'none' }}>Football</Link></li>
                             </ul>
                         </div>
                         <div className="footer-section footer-trending" style={{ flex: 1 }}>
@@ -30,10 +30,10 @@ const Footer = () => {
                                 <h4 className="footer-title">Trending Topics</h4>
                             </div>
                             <ul className="footer-links">
-                                <li className="footer-link"><Link to="/category/Apple" style={{ color: 'inherit', textDecoration: 'none' }}>Apple</Link></li>
-                                <li className="footer-link"><Link to="/category/OpenAI" style={{ color: 'inherit', textDecoration: 'none' }}>OpenAI</Link></li>
-                                <li className="footer-link"><Link to="/category/Software%20Development" style={{ color: 'inherit', textDecoration: 'none' }}>Software Development</Link></li>
-                                <li className="footer-link"><Link to="/category/Silicon%20Valley" style={{ color: 'inherit', textDecoration: 'none' }}>Silicon Valley</Link></li>
+                                <li className="footer-link"><Link to="/search/Apple" style={{ color: 'inherit', textDecoration: 'none' }}>Apple</Link></li>
+                                <li className="footer-link"><Link to="/search/OpenAI" style={{ color: 'inherit', textDecoration: 'none' }}>OpenAI</Link></li>
+                                <li className="footer-link"><Link to="/search/Software%20Development" style={{ color: 'inherit', textDecoration: 'none' }}>Software Development</Link></li>
+                                <li className="footer-link"><Link to="/search/Silicon%20Valley" style={{ color: 'inherit', textDecoration: 'none' }}>Silicon Valley</Link></li>
                             </ul>
                         </div>
                     </div>
