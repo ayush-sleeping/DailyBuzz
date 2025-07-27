@@ -26,11 +26,27 @@ A visually rich, modular news web app built with React and Vite, fetching live n
 
 ## About the Project
 DailyBuzz is a personal project that delivers the latest news in a modern, card-based UI. Users can:
-- Browse top headlines by category (Sports, Technology, Business, Entertainment, etc.)
-- Search for news topics and keywords
-- Explore editor's favorite topics
-- Enjoy a responsive, mobile-friendly experience
 
+## 🖼️ Output Preview
+
+Here are some screenshots of DailyBuzz running with a valid NewsAPI key:
+
+<div align="center">
+  <img src="src/assets/output/homepage.png" alt="Homepage" width="80%" />
+  <br><sub>Homepage: Top headlines and featured sections</sub>
+  <br><br>
+  <img src="src/assets/output/categorypage.png" alt="Category Page" width="80%" />
+  <br><sub>Category page: News filtered by selected category</sub>
+  <br><br>
+  <img src="src/assets/output/searchpage.png" alt="Search Page" width="80%" />
+  <br><sub>Search results for a news topic</sub>
+  <br><br>
+  <img src="src/assets/output/categoryfilter.png" alt="Category Filter" width="80%" />
+  <br><sub>Category filter pills for browsing news by topic on homepage</sub>
+  <br><br>
+</div>
+
+---
 [⬆️ Back to Top](#table-of-contents)
 
 <br>
@@ -39,12 +55,6 @@ DailyBuzz is a personal project that delivers the latest news in a modern, card-
 
 ## Tech Stack
 - **React** (with Hooks)
-- **Vite** (for fast dev/build)
-- **NewsAPI.org** (live news data)
-- **React Router** (navigation)
-- **CSS Modules** & custom styles
-- **.env** for API key management
-
 [⬆️ Back to Top](#table-of-contents)
 
 <br>
@@ -61,11 +71,14 @@ DailyBuzz is a personal project that delivers the latest news in a modern, card-
    ```sh
    npm install
    ```
-3. **Add your NewsAPI key:**
-   - Create a `.env` file in the root:
+3. **Get your own NewsAPI key:**
+   - Sign up for a free developer account at [NewsAPI.org](https://newsapi.org/).
+   - After registration, you will receive an API key.
+   - Create a `.env` file in the root of the project:
      ```env
      VITE_NEWS_API_KEY=your_api_key_here
      ```
+   - **Note:** The `.env` file is git-ignored and never committed. This key is only for local development.
 4. **Run the app:**
    ```sh
    npm run dev
@@ -136,6 +149,25 @@ All images and logos used in this project are downloaded from Pinterest. Thanks 
 
 ## API Credits
 Thanks to [NewsAPI.org](https://newsapi.org/) for providing a developer subscription with 100 requests per day.
+
+
+<br>
+
+## ⚠️ API Key Security in Production
+
+**Important:**
+- For local development, you can use your NewsAPI key in a `.env` file as described above.
+- For public deployments (like GitHub Pages), do NOT expose your NewsAPI key in the frontend code. Anyone can see it in the browser.
+- To keep your key secure in production, use a free serverless function (e.g., Netlify Functions or Vercel) as a proxy. Your frontend fetches news from this proxy, which keeps your key secret.
+
+**How to run this project locally:**
+1. Get your own NewsAPI key (see above).
+2. Create a `.env` file and add your key.
+3. Run the app with `npm run dev` and enjoy live news data!
+
+**How to deploy securely:**
+- Set up a serverless function (see project docs or ask the maintainer for a sample) to proxy NewsAPI requests.
+- Never commit or expose your API key in the frontend code or public repo.
 
 [⬆️ Back to Top](#table-of-contents)
 
