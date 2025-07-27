@@ -13,12 +13,15 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import AboutUs from './pages/AboutUs';
 import ScrollToTopIcon from './components/ScrollToTopIcon/ScrollToTopIcon';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './App.css';
 
 function App() {
     return (
         // Router with basename for GitHub Pages deployment under /DailyBuzz
         <Router basename="/DailyBuzz">
+            {/* Scroll to top on every route change */}
+            <ScrollToTop />
             <div className="app">
                 {/* Top notification bar */}
                 {/* Main site header and navigation */}
