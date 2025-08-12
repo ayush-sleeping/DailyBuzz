@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import HeroSection from '../components/homepage/HeroSection/HeroSection';
 import CategoryFilter from '../components/homepage/CategoryFilter/CategoryFilter';
-import NewsGrid from '../components/news/NewsGrid';
+import NewsGrid from '../components/News/NewsGrid';
 import FavoriteTopicsSlider from '../components/homepage/FavoriteTopicsSlider/FavoriteTopicsSlider';
 import MustReadSlider from '../components/homepage/MustReadSlider/MustReadSlider';
 import SplitTopics from '../components/homepage/SplitTopics/SplitTopics';

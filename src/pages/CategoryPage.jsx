@@ -1,7 +1,7 @@
 // CategoryPage.jsx - Displays news articles for a selected category with pagination
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import NewsGrid from '../components/news/NewsGrid';
+import NewsGrid from '../components/News/NewsGrid';
 import './CategoryPage.css';
 
 const PAGE_SIZE = 12; // Number of articles per page (used for pagination)

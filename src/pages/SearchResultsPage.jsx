@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import NewsGrid from '../components/news/NewsGrid';
+import NewsGrid from '../components/News/NewsGrid';
 import LoadingSpinner from '../components/common/LoadingSpinner/LoadingSpinner';
 
 const SearchResultsPage = () => {
