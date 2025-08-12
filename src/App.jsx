@@ -18,8 +18,8 @@ import './App.css';
 
 function App() {
     return (
-        // Router for Netlify root deployment
-        <Router>
+        // Router with basename for GitHub Pages deployment under /DailyBuzz
+        <Router basename="/DailyBuzz">
             {/* Scroll to top on every route change */}
             <ScrollToTop />
             <div className="app">
